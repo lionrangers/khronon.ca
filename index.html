@@ -16,7 +16,8 @@
         .main { flex: 1; padding: 20px; }
         .footer { background-color: #f4f4f4; text-align: center; padding: 10px; font-size: 0.8em; }
         .footer { background-color: #f4f4f4; text-align: center; padding: 10px; font-size: 0.8em; position: relative; }
-        .openai-badge { position: absolute; right: 10px; bottom: 10px; }
+        .openai-badge { width: 150px; /* 调整为合适的宽度 */ height: auto; /* 保持宽高比 */ position: absolute; right: 10px; bottom: 10px; }
+
     </style>
     </style>
 </head>
@@ -59,9 +60,9 @@
     </div>
     <div class="footer">
         <p>&copy; 2024 Khronon. All rights reserved.</p>
-    </div>
-        <div class="footer">
+    <div class="footer">
         <p>&copy; 2024 Khronon. All rights reserved.</p>
+        <!-- 修改图像大小 -->
         <img src="powered-by-openai-badge-filled-on-light.svg" alt="Powered by OpenAI" class="openai-badge">
     </div>
 </body>
