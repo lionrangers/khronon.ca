@@ -6,7 +6,13 @@
     <title>Khronon - Your Time Management Digital Assistant</title>
     <style>
         body { font-family: Arial, sans-serif; color: #333; margin: 0; padding: 0; }
-        .header { background-color: #f4f4f4; padding: 20px; text-align: center; }
+        .header {
+          display: flex;
+          justify-content: space-between; /* 如果您希望标题在左侧，副标题在右侧 */
+        }
+        .header h1 {
+          margin-right: 10px; /* 根据需要调整间距 */
+        }
         .header h1 { display: flex; align-items: center; }
         .header h1 img { width: 50px; /* 或者您想要的尺寸 */ margin-right: 10px; }
 
