@@ -8,26 +8,27 @@
         body { font-family: Arial, sans-serif; color: #333; margin: 0; padding: 0; }
         .header {
           display: flex;
-          justify-content: space-between; /* 如果您希望标题在左侧，副标题在右侧 */
+          justify-content: space-between;
+          align-items: center;
+          padding: 10px;
         }
-        .header h1 {
-          margin-right: 10px; /* 根据需要调整间距 */
+        .header h1, .header p {
+          margin: 0; /* 移除默认的margin */
         }
         .header h1 { display: flex; align-items: center; }
-        .header h1 img { width: 50px; /* 或者您想要的尺寸 */ margin-right: 10px; }
+        .header h1 img { width: 50px; margin-right: 10px; }
 
         .nav { background-color: #333; color: white; padding: 10px; }
         .nav ul { list-style-type: none; margin: 0; padding: 0; }
         .nav ul li { display: inline; margin-right: 20px; }
         .nav ul li a { color: white; text-decoration: none; }
-        .container { display: flex; }
+
         .sidebar { background-color: #f4f4f4; width: 200px; padding: 20px; }
         .main { flex: 1; padding: 20px; }
-        .footer { background-color: #f4f4f4; text-align: center; padding: 10px; font-size: 0.8em; }
-        .footer { background-color: #f4f4f4; text-align: center; padding: 10px; font-size: 0.8em; position: relative; }
-        .openai-badge { width: 150px; /* 调整为合适的宽度 */ height: auto; /* 保持宽高比 */ position: absolute; right: 10px; bottom: 10px; }
 
-    </style>
+        .footer { background-color: #f4f4f4; text-align: center; padding: 10px; font-size: 0.8em; position: relative; }
+        .openai-badge { width: 150px; height: auto; position: absolute; right: 10px; bottom: 10px; }
+
     </style>
 </head>
 <body>
@@ -35,37 +36,34 @@
         <h1><img src="khronon.png" alt="Khronon Logo">Khronon</h1>
         <p>Your Time Management Digital Assistant</p>
     </div>
+    <div class="nav">
+        <!-- 更新导航栏目录 -->
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="privacy-policy/khronon.ca">Privacy Policy</a></li>
+        </ul>
+    </div>
+    <div class="container">
         <div class="sidebar">
+            <!-- 更新侧边栏目录 -->
             <h3>Catalog</h3>
             <ul>
-                <li><a href="#About">Email Management</a></li>
-                <li><a href="#tasks">Task Management</a></li>
-                <li><a href="#calendar">Calendar Management</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="privacy-policy/khronon.ca">Privacy Policy</a></li>
             </ul>
         </div>
         <div class="main">
+            <!-- 主要内容保持不变 -->
             <h2 id="about">About Khronon</h2>
             <p>Khronon is a digital assistant designed specifically for time management...</p>
-            
-            <h2 id="features">Features</h2>
-            <h3 id="email">Email Management</h3>
-            <p>Khronon can handle your Gmail, focusing on unread emails in your Primary folder...</p>
-            <h3 id="tasks">Task Management</h3>
-            <p>Access and prioritize tasks with categories P1, P2, P3, and P4...</p>
-            <h3 id="calendar">Calendar Management</h3>
-            <p>Manage your calendar effectively, adapting to your current time zone...</p>
-            
-            <h2 id="try">Try Khronon</h2>
-            <p>Interactive demos and forms...</p>
+            <!-- 移除不需要的部分 -->
         </div>
     </div>
     <div class="footer">
         <p>&copy; 2024 Khronon. All rights reserved.</p>
-    <div class="footer">
-        <p>&copy; 2024 Khronon. All rights reserved.</p>
-        <!-- 修改图像大小 -->
         <img src="powered-by-openai-badge-filled-on-light.svg" alt="Powered by OpenAI" class="openai-badge">
     </div>
 </body>
 </html>
+
 
